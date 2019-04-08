@@ -1,0 +1,86 @@
+@font-face  {
+    font-family: 'adventpro';
+    src:url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.eot') format('eot'),
+        url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.svg') format('svg'),
+        url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.ttf') format('truetype'),
+        url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.woff') format('woff');
+}
+
+body
+{
+    background-image: url("images/shattered.png");
+    font-family:'adventpro','Trebuchet MS','Comic Sans MS';
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 40%;
+}
+
+header h1
+{
+    font-weight: bold;
+}
+
+#imageCV
+{
+    box-shadow: 2px 2px 1px black;
+}
+
+#experience div
+{
+    display: flex;
+}
+
+#formation div
+{
+    display: flex;
+}
+
+.pgauche
+{
+    width:250px;
+}
+
+h2
+{
+    margin-bottom: 30px;
+    color:#956508;
+}
+
+.coordonnes:nth-child(2)
+{
+    align-self: flex-end;
+}
+
+@media screen and (max-width:1024px)
+{
+    #imageCV
+    {
+        display:none;
+    }
+
+    header
+    {
+        flex-direction: column;
+    }
+
+    .coordonnes:nth-child(2)
+    {
+        align-self: center;
+    }
+
+    #experience div
+    {
+        flex-direction: column;
+    }
+
+    #formation div
+    {
+        flex-direction: column;
+    }
+}
